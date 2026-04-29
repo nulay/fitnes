@@ -1,0 +1,13 @@
+{
+  "catalog_version": "1.0",
+  "lessons": [
+    {
+      "id": "lfk_spine_1",
+      "title": "ЛФК для позвоночника и шеи",
+      "description": "Комплекс упражнений при остеохондрозе позвоночника, боли в шее и пояснице",
+      "difficulty": "beginner",
+      "duration_minutes": 15,
+      "file": "lfk_spine_1.json"
+    }
+  ]
+}

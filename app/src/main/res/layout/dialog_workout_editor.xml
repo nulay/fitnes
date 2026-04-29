@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/background_dark">
+
+    <TextView
+        android:id="@+id/tvEditorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="РЕДАКТОР КОМПЛЕКСА"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Название"
+        android:textSize="12sp"
+        android:textColor="@color/text_secondary"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etAppName"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:hint="Название комплекса"
+        android:inputType="text"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_hint"
+        android:background="@drawable/card_background"
+        android:paddingStart="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Описание"
+        android:textSize="12sp"
+        android:textColor="@color/text_secondary"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etDataSource"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:hint="Описание"
+        android:inputType="textMultiLine"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_hint"
+        android:background="@drawable/card_background"
+        android:paddingStart="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Кнопки действий -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+
+        <Button
+            android:id="@+id/btnVoiceAdd"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="🎤 ДОБАВИТЬ"
+            android:textSize="11sp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_voice"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnVoiceEdit"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="🎤 ИЗМЕНИТЬ"
+            android:textSize="11sp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_voice"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="+ ДОБАВИТЬ"
+            android:textSize="11sp"
+            android:textColor="@color/accent"
+            android:background="@drawable/card_background"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="✏️ ИЗМЕНИТЬ"
+            android:textSize="11sp"
+            android:textColor="@color/text_secondary"
+            android:background="@drawable/card_background"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvExercisesCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Упражнений: 0"
+        android:textSize="12sp"
+        android:textColor="@color/text_hint"
+        android:layout_marginBottom="8dp"/>
+
+    <ListView
+        android:id="@+id/lvExercises"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/card_background"
+        android:divider="@color/surface"
+        android:dividerHeight="1dp"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="УДАЛИТЬ"
+            android:textSize="13sp"
+            android:textColor="@color/error"
+            android:background="@drawable/card_background"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="СОХРАНИТЬ"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_primary"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="ОТМЕНА"
+        android:textSize="13sp"
+        android:textColor="@color/text_hint"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

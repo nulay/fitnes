@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/button_circle"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:scaleType="center"
+            android:contentDescription="Назад"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="УПРАЖНЕНИЯ"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Создать новое -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СОЗДАТЬ НОВЫЙ КОМПЛЕКС"
+                android:textSize="12sp"
+                android:textColor="@color/text_hint"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etNewWorkoutName"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:hint="Название"
+                android:inputType="text"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint"
+                android:background="@drawable/card_background"
+                android:paddingStart="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etNewWorkoutDesc"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:hint="Описание"
+                android:inputType="textMultiLine"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint"
+                android:background="@drawable/card_background"
+                android:paddingStart="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/btnVoiceCreate"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:text="🎤 ГОЛОС"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_voice"
+                    android:layout_marginEnd="8dp"/>
+
+                <Button
+                    android:id="@+id/btnSaveWorkout"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:text="СОХРАНИТЬ"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_primary"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/surface"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Список созданных -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="МОИ КОМПЛЕКСЫ"
+                android:textSize="12sp"
+                android:textColor="@color/text_hint"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Нажмите для выбора, держите для редактирования"
+                android:textSize="11sp"
+                android:textColor="@color/text_hint"
+                android:layout_marginBottom="8dp"/>
+
+            <ListView
+                android:id="@+id/lvWorkouts"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/card_background"
+                android:divider="@color/surface"
+                android:dividerHeight="1dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Фон -->
+    <path
+        android:fillColor="#FF2F3542"
+        android:pathData="M0,0h100v100h-100z"/>
+
+    <!-- Человек делает упражнение (силуэт) -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M50,20
+                         a5,5 0 1,1 0,0.1
+                         M50,28
+                         L50,45
+                         M35,35
+                         L50,28
+                         L65,35
+                         M50,45
+                         L35,60
+                         M50,45
+                         L65,60
+                         M35,60
+                         L35,75
+                         M65,60
+                         L65,75"/>
+
+    <!-- Линия (пол) -->
+    <path
+        android:strokeColor="#FF2ED573"
+        android:strokeWidth="2"
+        android:pathData="M20,80 L80,80"/>
+</vector>

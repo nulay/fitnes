@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/tvWorkoutName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Название"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"/>
+
+    <TextView
+        android:id="@+id/tvWorkoutDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Описание"
+        android:textSize="13sp"
+        android:textColor="@color/text_secondary"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/tvExercisesCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Упражнений: 0"
+        android:textSize="11sp"
+        android:textColor="@color/text_hint"
+        android:layout_marginTop="4dp"/>
+
+</LinearLayout>

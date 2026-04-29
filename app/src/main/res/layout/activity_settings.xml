@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/button_circle"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:scaleType="center"
+            android:contentDescription="Назад"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="НАСТРОЙКИ"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Режим голоса -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="РЕЖИМ ГОЛОСА"
+                android:textSize="12sp"
+                android:textColor="@color/text_hint"
+                android:layout_marginBottom="8dp"/>
+
+            <RadioGroup
+                android:id="@+id/rgVoiceMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <RadioButton
+                    android:id="@+id/rbSimple"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Простой (поэтапный ввод)"
+                    android:textColor="@color/text_primary"
+                    android:paddingStart="12dp"
+                    android:background="@drawable/card_background"/>
+
+                <RadioButton
+                    android:id="@+id/rbAI"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="С ИИ (умное распознавание)"
+                    android:textColor="@color/text_primary"
+                    android:paddingStart="12dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/card_background"/>
+            </RadioGroup>
+
+            <!-- API Конфигурации -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="КОНФИГУРАЦИИ API"
+                android:textSize="12sp"
+                android:textColor="@color/text_hint"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Нажмите для выбора, держите для редактирования"
+                android:textSize="11sp"
+                android:textColor="@color/text_hint"
+                android:layout_marginBottom="8dp"/>
+
+            <ListView
+                android:id="@+id/lvConfigs"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/card_background"
+                android:divider="@color/surface"
+                android:dividerHeight="1dp"/>
+
+            <Button
+                android:id="@+id/btnAddConfig"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="+ ДОБАВИТЬ КОНФИГУРАЦИЮ"
+                android:textSize="13sp"
+                android:textColor="@color/accent"
+                android:background="@drawable/card_background"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

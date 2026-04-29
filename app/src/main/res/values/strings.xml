@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">ЛФК ТРЕНАЖЁР</string>
+    <string name="start_workout">СТАРТ</string>
+    <string name="stop_workout">СТОП</string>
+    <string name="next_exercise">Следующее</string>
+    <string name="repeat_exercise">Повторить</string>
+    <string name="exercise_complete">Упражнение выполнено</string>
+    <string name="waiting_command">Скажите "следующее" для перехода</string>
+    <string name="tts_not_available">Синтез речи недоступен</string>
+    <string name="stt_not_available">Распознавание речи недоступно</string>
+    <string name="permission_required">Нужен доступ к микрофону</string>
+    <string name="select_lesson">Выберите урок</string>
+    <string name="ready_question">Вы готовы начать?</string>
+    <string name="say_yes">Скажите "ДА"</string>
+</resources>
